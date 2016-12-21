@@ -144,7 +144,7 @@ public class MainNavigator extends FragmentActivity implements OnMapReadyCallbac
     private Socket socket;
     {
         try {
-            socket = IO.socket("http://buslocation-itoaxacaedu.rhcloud.com/");
+            socket = IO.socket("http://nodejs-proyectov16.44fs.preview.openshiftapps.com/");
         }
         catch(URISyntaxException e) {
             Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
@@ -438,6 +438,7 @@ public class MainNavigator extends FragmentActivity implements OnMapReadyCallbac
         } else if (id == R.id.nav_BT) {
 
         } else if (id == R.id.nav_desarrolladores) {
+            Toast.makeText(this, "Flores Perez Mario Andrez\nMartinez Santiago Feliciano\nPerez Hernandez Gabriela Ivet\n   Ruiz Gonzalez Alexander\nSanchez Villegas Esteban", Toast.LENGTH_SHORT).show();
 
         }else if(id== R.id.nav_cerrar){
             cerrarSesion();
